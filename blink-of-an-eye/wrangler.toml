@@ -1,11 +1,11 @@
 
 name = "boae-v1"
-#main = worker/src/index.ts
+main = worker/src/index.ts
 compatibility_date = "2025-11-29"
 
 # Pages project configuration
 [site]
-bucket = "./boae-v1/blink-of-an-eye/frontend"        # Static assets directory
+bucket = "/boae-v1/blink-of-an-eye/frontend/"        # Static assets directory
 entry-point = "functions"    # Pages Functions directory
 
 # Optional: environment variables
