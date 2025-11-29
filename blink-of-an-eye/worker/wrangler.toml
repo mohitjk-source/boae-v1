@@ -1,0 +1,7 @@
+name = "blink-api"
+main = "src/index.ts"
+compatibility_date = "2024-10-01"
+
+routes = [
+  { pattern = "api.blinkofaneye.in/*", zone_name = "blinkofaneye.in" }
+]
