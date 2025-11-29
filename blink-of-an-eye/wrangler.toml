@@ -3,7 +3,7 @@ compatibility_date = "2025-11-29"
 
 # Pages project configuration
 [site]
-bucket = "./frontend"        # Static assets directory
+bucket = "./blink-of-an-eye/frontend"        # Static assets directory
 entry-point = "functions"    # Pages Functions directory
 
 # Optional: environment variables
