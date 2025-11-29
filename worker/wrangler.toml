@@ -1,5 +1,5 @@
 name = "boae-v1-worker"
-main = "src/index.ts"
+main = "worker/src/index.ts"
 compatibility_date = "2025-11-29"
 [vars]
 YOUTUBE_CHANNEL_ID = "UCwaM48qdZeWsII30OCMnShg"
