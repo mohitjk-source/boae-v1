@@ -3,11 +3,11 @@ name = "boae-v1"
 compatibility_date = "2025-11-29"
 
 # Required for Pages
-pages_build_output_dir = "/blink-of-an-eye/frontend"
+pages_build_output_dir = "/blink-of-an-eye/frontend/"
 
 # Pages project configuration
 [site]
-bucket = "/blink-of-an-eye/frontend"        # Static assets directory
+bucket = "/blink-of-an-eye/frontend/"        # Static assets directory
 entry-point = "functions"    # Pages Functions directory
 
 

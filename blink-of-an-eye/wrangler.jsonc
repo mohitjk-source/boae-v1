@@ -5,9 +5,9 @@
   
   // Project name for Wrangler
   
- "pages_build_output_dir": "/blink-of-an-eye/frontend",
+ "pages_build_output_dir": "./frontend",
 "assets": {
-    "directory": "/blink-of-an-eye/frontend"
+    "directory": "./frontend"
   },
 
 
