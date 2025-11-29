@@ -1,12 +1,14 @@
 {
-  "name": "blink-of-an-eye",
+  "name": "boae-v1",
   "main" : "worker/src/index.ts",
   "compatibility_date": "2025-11-29",
   
   // Project name for Wrangler
   
  
-
+"assets": {
+    "directory": "./frontend"
+  },
 
 
 
