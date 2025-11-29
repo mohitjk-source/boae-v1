@@ -91,7 +91,7 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     try {
-      if (url.pathname === "/youtube") {
+      if (url.pathname === "/boae-v1/blink-of-an-eye/youtube") {
         return withEdgeCache(request, async () => {
           const maxResults = Number(url.searchParams.get("limit") ?? 8);
           const api = `https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=${env.YOUTUBE_CHANNEL_ID}&maxResults=${maxResults}&key=${env.YOUTUBE_API_KEY}`;
