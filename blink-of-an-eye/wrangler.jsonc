@@ -1,0 +1,7 @@
+{
+  "name": "blink-of-an-eye",
+  "compatibility_date": "2025-11-29",
+  "assets": {
+    "directory": "./frontend"
+  }
+}
