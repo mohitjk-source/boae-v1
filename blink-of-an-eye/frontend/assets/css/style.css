@@ -241,7 +241,7 @@ footer button:hover {
 
 /* Responsive tweaks */
 @media (max-width: 400px) {
-  .logo img { height: 300px; }
+  .logo img { height: 200px; }
   .logo-text { font-size: 1.2rem; }
   nav ul { gap: 20px; }
   .video-wrapper iframe { height: 400px; }
