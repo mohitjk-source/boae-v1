@@ -4,21 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blink Of An Eye | Podcast & Reviews</title>
-
-  <!-- ✅ Base tag ensures all relative paths resolve from site root -->
-  
-
-  <!-- CSS link now works consistently across all routes -->
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Basic SEO -->
-  <meta name="description" content="Blink Of An Eye podcast — authentic reviews, soliloquies, and latest episodes.">
-  <meta property="og:title" content="Blink Of An Eye">
-  <meta property="og:description" content="Authentic reviews and podcast episodes.">
-  <meta property="og:type" content="website">
 </head>
 <body>
-  <!-- Header -->
   <header>
     <h1>Blink Of An Eye</h1>
     <nav>
@@ -29,28 +17,50 @@
     </nav>
   </header>
 
-  <!-- Latest Episodes -->
   <section id="episodes">
     <h2>Latest Episodes</h2>
-    <!-- Example YouTube embed -->
-    <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/jPcQZXTtX4w"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    <div id="youtube-feed"></div>
   </section>
 
-  <!-- Latest Reviews -->
   <section id="reviews">
     <h2>Latest Reviews</h2>
-    <p>Coming soon: Instagram reviews integration.</p>
+    <div id="instagram-feed"></div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Blink Of An Eye</p>
   </footer>
+
+  <script>
+    // Fetch YouTube videos
+    fetch("/youtube")
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("youtube-feed");
+        data.items.forEach(item => {
+          const videoId = item.id.videoId;
+          const iframe = document.createElement("iframe");
+          iframe.src = `https://www.youtube.com/embed/${videoId}`;
+          iframe.width = "320";
+          iframe.height = "180";
+          iframe.allowFullscreen = true;
+          container.appendChild(iframe);
+        });
+      });
+
+    // Fetch Instagram posts
+    fetch("/instagram")
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("instagram-feed");
+        data.data.forEach(post => {
+          const img = document.createElement("img");
+          img.src = post.media_url;
+          img.alt = post.caption || "";
+          img.style.width = "200px";
+          container.appendChild(img);
+        });
+      });
+  </script>
 </body>
 </html>
