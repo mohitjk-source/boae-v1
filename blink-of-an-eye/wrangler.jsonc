@@ -1,6 +1,6 @@
 {
   "name": "boae-v1",
-  "main" : "/worker/src/index.ts",
+  //"main" : "/worker/src/index.ts",
   "compatibility_date": "2025-11-29",
   
   // Project name for Wrangler
