@@ -52,7 +52,7 @@ header {
 }
 
 .logo img {
-  height: auto;
+  height: 100px;
   width: auto;
   display: block;
 }
