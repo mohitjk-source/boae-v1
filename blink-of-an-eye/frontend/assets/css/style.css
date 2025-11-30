@@ -53,7 +53,7 @@ header {
 
 .logo img {
   height: 100px;
-  width: auto;
+  width: 100px;
   display: block;
 }
 
@@ -99,7 +99,7 @@ nav li a {
 .featured-video h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #D4A9FD; /* lavender section title */
+  color: #ffffff; /* lavender section title */
 }
 
 .video-wrapper iframe {
@@ -120,7 +120,7 @@ nav li a {
 .episodes h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #D4A9FD;
+  color: #ffffff;
 }
 
 .card-grid {
@@ -159,7 +159,7 @@ nav li a {
 .reviews h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #D4A9FD;
+  color: #ffffff;
 }
 
 .review-grid {
@@ -196,7 +196,7 @@ nav li a {
 
 .review-card a {
   font-weight: bold;
-  color: #D4A9FD; /* lavender links */
+  color: #ffffff; /* lavender links */
 }
 
 /* Footer */
@@ -226,9 +226,9 @@ footer button:hover {
 }
 
 /* Responsive tweaks */
-@media (max-width: 768px) {
-  .logo img { height: 32px; }
+@media (max-width: 200px) {
+  .logo img { height: 100px; }
   .logo-text { font-size: 1.2rem; }
   nav ul { gap: 20px; }
-  .video-wrapper iframe { height: 280px; }
+  .video-wrapper iframe { height: 100px; }
 }
