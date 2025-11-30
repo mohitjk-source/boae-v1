@@ -99,7 +99,7 @@ nav li a {
 .featured-video h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #B6F83E; /* lavender section title */
+  color: #ffffff; /* lavender section title */
 }
 
 .video-wrapper iframe {
@@ -125,7 +125,7 @@ nav li a {
 .episodes h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #B6F83E;
+  color: #ffffff;
 }
 
 .card-grid {
@@ -164,7 +164,7 @@ nav li a {
 .reviews h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #B6F83E;
+  color: #ffffff;
 }
 
 .review-grid {
