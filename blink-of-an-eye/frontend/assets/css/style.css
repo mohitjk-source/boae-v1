@@ -51,8 +51,7 @@ header {
 }
 
 .logo img {
-  height: 80px;
-  background-color: #B6F83E;
+  height: auto;
   width: auto;
   display: block;
 }
