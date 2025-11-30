@@ -13,8 +13,8 @@
   "env": {
     "production": {
       "vars": {
-        "YOUTUBE_API_KEY": "AIzaSyD8by2ePwkkXzkqtJefXSSdmSD34WrMj2",
-        "YOUTUBE_CHANNEL_ID": "UCwaM48qdZeWsII30OCMnShg",
+        "YOUTUBE_API_KEY": "AIzaSyCt_Wx6OtPLGiglVMsBurTUaauJokR_Nt0",
+        "YOUTUBE_CHANNEL_ID": "@soulwithoutjhol",
           "INSTAGRAM_ACCESS_TOKEN": "your_instagram_access_token"
       }
     }

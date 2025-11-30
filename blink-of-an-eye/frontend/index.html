@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blink Of An Eye</title>
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <!-- Navigation -->
   <header>
     <div class="nav-container">
-      <div class="logo">🔥 BOAE</div>
+      <div class="logo"><img src="images/logo.png" alt="Blink Of An Eye"/>Blink Of An Eye"</div>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
@@ -62,7 +63,20 @@
       </div>
     </div>
   </section>
+  <!-- Episodes (YouTube) -->
+  <section id="episodes" class="border-t border-gray-200 dark:border-gray-800">
+    <div class="container px-6 py-12">
+      <div class="flex items-end justify-between">
+        <h2 class="text-2xl font-bold">Latest episodes</h2>
+        <a href="https://youtube.com/@BlinkOfAnEye/videos" target="_blank" rel="noopener" class="text-sm hover:opacity-80">All videos</a>
+      </div>
 
+      <!-- Grid populated by JS -->
+      <div id="episode-grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cards injected by fetchYouTube() -->
+      </div>
+    </div>
+  </section>
   <!-- Reviews -->
   <section class="reviews">
     <h2>Reviews</h2>
