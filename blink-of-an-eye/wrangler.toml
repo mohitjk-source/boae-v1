@@ -14,5 +14,3 @@ entry-point = "functions"    # Pages Functions directory
 # Binding to Worker service
 [bindings]
 worker = { binding = "API_WORKER", service = "boae-v1-worker" }
-
-
