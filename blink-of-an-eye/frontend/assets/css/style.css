@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #6709c0c9; /* lavender links */
+  color: #B6F83E; /* lavender links */
   text-decoration: none;
 }
 
@@ -23,13 +23,13 @@ a:hover {
 }
 
 h1, h2, h3 {
-  color: #ffffff;
+  color: #B6F83E;
 }
 
 /* Navigation */
 header {
-  background-color: #aff133;
-  background: linear-gradient(135deg, #aff133, #5b1769);
+  background-color: #1a1a2e;
+  background: linear-gradient(135deg, #2a2a2e, #1a1a2e);
   padding: 20px 0;
   border-bottom: 1px solid #333;
 }
@@ -73,7 +73,7 @@ nav ul {
 nav li a {
   font-weight: 600;
   font-size: 1rem;
-  color: #6709c0c9; /* lavender nav links */
+  color: #B6F83E; /* lavender nav links */
 }
 
 /* Hero */
@@ -99,7 +99,7 @@ nav li a {
 .featured-video h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #ffffff; /* lavender section title */
+  color: #B6F83E; /* lavender section title */
 }
 
 .video-wrapper iframe {
@@ -120,7 +120,7 @@ nav li a {
 .episodes h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #B6F83E;
 }
 
 .card-grid {
@@ -159,7 +159,7 @@ nav li a {
 .reviews h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #B6F83E;
 }
 
 .review-grid {
@@ -226,9 +226,9 @@ footer button:hover {
 }
 
 /* Responsive tweaks */
-@media (max-width: 200px) {
-  .logo img { height: 100px; }
+@media (max-width: 400px) {
+  .logo img { height: 200px; }
   .logo-text { font-size: 1.2rem; }
   nav ul { gap: 20px; }
-  .video-wrapper iframe { height: 100px; }
+  .video-wrapper iframe { height: 400px; }
 }
