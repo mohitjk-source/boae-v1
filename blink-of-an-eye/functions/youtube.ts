@@ -3,7 +3,7 @@ export async function onRequest(context: EventContext<Env, any, any>) {
   const channelId = "UCWuk3YTnT5-9QxeoVF-wUFw"; // your channel ID
 
   const res = await fetch(
-    `https://www.googleapis.com/youtube/v3/search?order=date&type=videos&part=snippet&channelId=${channelId}&maxResults=4&key=${apiKey}`
+    `https://www.googleapis.com/youtube/v3/search?order=date&type=videos&videoDuration=long&part=snippet&channelId=${channelId}&maxResults=4&key=${apiKey}`
   );
   const data = await res.json();
 

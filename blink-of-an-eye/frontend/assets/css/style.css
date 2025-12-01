@@ -171,6 +171,7 @@ nav li a {
   border-radius: 8px; 
   padding: 20px; 
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
+   overflow: hidden; /* prevents image overflow */
 }
 
 .episode-card {
@@ -179,6 +180,7 @@ nav li a {
   padding: 20px;
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
+   overflow: hidden; /* prevents image overflow */
 }
 
 .review-card:hover,
