@@ -10,6 +10,15 @@ pages_build_output_dir = "blink-of-an-eye/frontend"
 bucket = "blink-of-an-eye/frontend"        # Static assets directory
 entry-point = "functions"    # Pages Functions directory
 
+[functions]
+# Functions live in ./functions directory
+directory = "functions"
+
+# Environment variables (never hardcode secrets in code)
+[vars]
+YOUTUBE_API_KEY = "your-youtube-api-key"
+INSTAGRAM_ACCESS_TOKEN = "your-instagram-access-token"
+
 
 # Binding to Worker service
 [bindings]
