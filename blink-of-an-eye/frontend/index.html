@@ -132,7 +132,7 @@
     // YouTube Data API placeholder: inject latest videos into #episode-grid
     async function fetchYouTube() {
       // Replace with your API endpoint or Worker route, e.g. /api/youtube
-      const res = await fetch('functions/youtube');
+      const res = await fetch('/functions/youtube');
       if (!res.ok) return;
       const items = await res.json(); // [{id, title, thumb, publishedAt}]
       const grid = document.getElementById('episode-grid');
@@ -153,7 +153,7 @@
     // Instagram Graph API placeholder: inject recent posts into #reviews-grid
     async function fetchInstagram() {
       // Replace with your API endpoint or Worker route, e.g. /api/instagram
-      const res = await fetch('/instagram');
+      const res = await fetch('/functions/instagram');
       if (!res.ok) return;
       const items = await res.json(); // [{id, caption, media_url, permalink}]
       const grid = document.getElementById('reviews-grid');
