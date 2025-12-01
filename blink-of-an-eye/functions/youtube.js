@@ -1,6 +1,6 @@
 export async function onRequest(context) {
   const { YOUTUBE_API_KEY, YOUTUBE_CHANNEL_ID } = context.env;
-  const url = `https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=${YOUTUBE_CHANNEL_ID}&maxResults=5&key=${YOUTUBE_API_KEY}`;
+  const url = `https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=@soulwithoutjhol&maxResults=5&key=AIzaSyCt_Wx6OtPLGiglVMsBurTUaauJokR_Nt0`;
   const res = await fetch(url);
   const data = await res.json();
 

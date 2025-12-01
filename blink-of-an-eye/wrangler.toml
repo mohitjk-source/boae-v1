@@ -16,7 +16,7 @@ directory = "functions"
 
 # Environment variables (never hardcode secrets in code)
 [vars]
-YOUTUBE_API_KEY = "your-youtube-api-key"
+YOUTUBE_API_KEY = "AIzaSyCt_Wx6OtPLGiglVMsBurTUaauJokR_Nt0"
 INSTAGRAM_ACCESS_TOKEN = "your-instagram-access-token"
 
 
