@@ -155,7 +155,8 @@ nav li a {
 }
 
 /* Unified Grid for Reviews & Episodes */
-.review-grid,
+.review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+
 #episode-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
