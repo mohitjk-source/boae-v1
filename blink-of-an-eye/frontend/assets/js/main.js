@@ -42,8 +42,8 @@ const renderReviews = (items) => {
   try {
     // Directly call Pages Functions routes
     const [yt, ig] = await Promise.all([
-      fetch("functions/youtube?limit=8").then((r) => r.json()),
-      fetch("functions/instagram?limit=8").then((r) => r.json()),
+      fetch("/functions/youtube?limit=8").then((r) => r.json()),
+      fetch("/functions/instagram?limit=8").then((r) => r.json()),
     ]);
 
     renderVideos(yt.items || []);
