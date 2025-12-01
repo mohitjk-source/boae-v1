@@ -49,7 +49,7 @@
         <h2 class="text-2xl font-bold">Latest episodes</h2>
         <a href="https://youtube.com/@soulwithoutjhol/videos" target="_blank" rel="noopener" class="text-sm hover:opacity-80">All videos</a>
       </div>
-      <div id="episode-grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div id="episode-grid" class="review-grid">
         <!-- Cards injected by fetchYouTube() -->
       </div>
     </div>
@@ -126,27 +126,28 @@
 
     // YouTube Data API placeholder: inject latest videos into #episode-grid
     async function fetchYouTube() {
-      const res = await fetch('/youtube'); // Cloudflare Function route
-      if (!res.ok) return;
-      const items = await res.json();
-      const grid = document.getElementById('episode-grid');
-      if (!Array.isArray(items)) {
-        grid.innerHTML = "<p>No episodes available.</p>";
-        return;
-      }
-      grid.innerHTML = items.map(v => `
-        <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener"
-           class="group block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 hover:shadow-sm">
-          <div class="aspect-video bg-gray-100 dark:bg-gray-900">
-            <img src="${v.thumb}" alt="${v.title}" class="w-full h-full object-cover" loading="lazy">
-          </div>
-          <div class="p-4">
-            <h3 class="text-base font-semibold group-hover:underline">${v.title}</h3>
-            <p class="mt-1 text-xs text-gray-600 dark:text-gray-400">${new Date(v.publishedAt).toLocaleDateString()}</p>
-          </div>
-        </a>
-      `).join('');
-    }
+  const res = await fetch('/youtube'); // Cloudflare Function route
+  if (!res.ok) return;
+  const items = await res.json();
+  const grid = document.getElementById('episode-grid');
+
+  if (!Array.isArray(items)) {
+    grid.innerHTML = "<p>No episodes available.</p>";
+    return;
+  }
+
+  grid.innerHTML = items.map(v => `
+    <div class="review-card">
+      <h3>${v.title}</h3>
+      <div class="aspect-video bg-gray-100 dark:bg-gray-900">
+        <img src="${v.thumb}" alt="${v.title}" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <span>${new Date(v.publishedAt).toLocaleDateString()}</span>
+      <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener">Watch →</a>
+    </div>
+  `).join('');
+}
+
 
     // Instagram Graph API placeholder: inject recent posts into #reviews-grid
     async function fetchInstagram() {
